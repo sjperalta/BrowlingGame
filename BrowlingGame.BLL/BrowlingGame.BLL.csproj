@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ScoreCalculator\Strategies\IOpenFrameStrategy.cs" />
+    <Compile Remove="ScoreCalculator\Strategies\ISpareStrategy.cs" />
+    <Compile Remove="ScoreCalculator\Strategies\IStrikeStrategy.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BrowlingGame.DAL\BrowlingGame.DAL.csproj" />
+  </ItemGroup>
+
+</Project>
